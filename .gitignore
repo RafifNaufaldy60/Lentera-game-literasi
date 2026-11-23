@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+dist/
+build/
+coverage/
+
+# Credentials
+.env
+.env.*
+!.env.example
+
+# Database backup
+backup-neon.sql
+*backup*.sql
+
+# Logs
+*.log
+npm-debug.log*
+
+# System
+.DS_Store
+Thumbs.db
