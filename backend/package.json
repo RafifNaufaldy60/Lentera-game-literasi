@@ -1,0 +1,28 @@
+{
+  "name": "literasi-digital-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "db:check": "node scripts/db-check.js",
+    "db:migrate": "node scripts/migrate.js",
+    "db:seed": "node scripts/seed.js",
+    "db:verify": "node scripts/db-verify.js",
+    "auth:setup": "node scripts/setup-auth.js",
+    "admin:promote": "node scripts/promote-admin.js",
+    "test": "node --test",
+    "db:seed:game": "node scripts/seed-game.js",
+    "db:seed:shop": "node scripts/seed-shop.js",
+    "db:verify:shop": "node scripts/verify-shop.js"
+  },
+  "dependencies": {
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.4",
+    "express-session": "^1.19.0",
+    "pg": "^8.23.1"
+  }
+}
